@@ -6,7 +6,7 @@ class Examl < Formula
   version '3.0.17'
   
   def install
-    if `which mpicc` ~= /no mpicc/
+    if `which mpicc` =! /no mpicc/
       odie 'Please make sure we have a mpicc available for compliation'
     end
     if `mpicc` !~ /Intel/
