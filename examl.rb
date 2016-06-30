@@ -11,13 +11,11 @@ class Examl < Formula
     end
 
     cd 'examl' do
-      avx_args = ['-f', 'Makefile.AVX.gcc']
-      system 'make', *avx_args
+      system 'make', '-f', 'Makefile.AVX.gcc'
       bin.install 'examl-AVX'
-      system 'make', *avx_args, 'clean'
-      
-      sse3_args = ['-f', 'Makefile.SSE3.gcc']
-      system 'make', *sse3_args
+      system 'make','-f', 'Makefile.AVX.gcc', 'clean'
+
+      system 'make', '-f', 'Makefile.SSE3.gcc'
       bin.install 'examl'
     end
   end
