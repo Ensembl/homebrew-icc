@@ -9,7 +9,7 @@ class Examl < Formula
     if `which mpicc` =~ /no mpicc/
       odie 'Please make sure we have a mpicc available for compliation'
     end
-    if `mpicc` !~ /Intel/
+    if `mpicc --version` !~ /Intel/
       odie 'Expect the Intel mpicc to be available for this buil'
     end
 
