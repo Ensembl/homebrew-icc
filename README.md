@@ -1,13 +1,13 @@
-# homebrew-ensemblicc
+# homebrew-icc
 A collection of homebrew formula for working with ICC and ICCMPI programs
 
 ## Homebrew/Linuxbrew compatability
 These formula have been developed primarily for Linuxbrew. They may work for OSX, they may not. If you are unsure then look at [Homebrew Science](https://github.com/Homebrew/homebrew-science) for more generic solutions.
 
 ## How Do I Install these Formula
-`brew install ensembl/ensemblicc/<formula>`
+`brew install ensembl/icc/<formula>`
 
-Or brew tap `ensembl/ensemblicc` and then `brew install <formula>`.
+Or brew tap `ensembl/icc` and then `brew install <formula>`.
 
 ## Troubleshooting
 **IMPORTANT** First read the [Troubleshooting Checklist](https://github.com/Homebrew/brew/blob/master/share/doc/homebrew/Troubleshooting.md#troubleshooting).).
