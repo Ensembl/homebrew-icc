@@ -21,5 +21,10 @@ class Examl < Formula
       system 'make', '-f', 'Makefile.SSE3.gcc'
       bin.install 'examl'
     end
+
+    cd 'parser' do
+      system 'make', '-f', 'Makefile.SSE3.gcc'
+      bin.install 'parse-examl'
+    end
   end
 end
