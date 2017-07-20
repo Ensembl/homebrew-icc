@@ -16,6 +16,7 @@ class Phyldog < Formula
   version 'v2.01b-2017-05-16'
 
   depends_on 'cmake' => :build
+  depends_on 'openmpi' => ["with-cxx-bindings"]
   depends_on 'ensembl/ensembl/libpll'
   depends_on 'ensembl/ensembl/biopp'
   depends_on 'ensembl/ensembl/boost'
