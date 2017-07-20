@@ -23,6 +23,13 @@ class Phyldog < Formula
   patch :DATA
 
   def install
+    if `which mpicc` =~ /no mpicc/
+      odie 'Please make sure we have a mpicc available for compliation'
+    end
+    if `mpicc --version` !~ /Intel/
+      odie 'Expect the Intel mpicc to be available for this buil'
+    end
+    
     biopp = Formula['ensembl/ensembl/biopp']
     boost = Formula['ensembl/ensembl/boost']
     libpll = Formula['ensembl/ensembl/libpll']
